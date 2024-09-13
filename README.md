@@ -6,3 +6,5 @@ Growing up, every girl dreamed of having Cher’s closet from the 1995 chick fli
 ![alt text](./assests/AsIfWardrobeLoginPageDrawing.jpeg)
 ![alt text](./assests/AsIfWardrobeSeasonDrawing.jpeg)
 ![alt text](./assests/AsIfWardrobeDemoDrawing.jpeg)
+
+##Technologies
