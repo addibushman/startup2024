@@ -6,4 +6,22 @@ Growing up, every girl dreamed of having Cher’s closet from the 1995 chick fli
 ![alt text](./assests/AsIfWardrobeLoginPageDrawing.jpeg)
 ![alt text](./assests/AsIfWardrobeDemoDrawing.jpeg)
 
-##Technologies
+### Key features
+
+put key features here
+
+### Technologies
+
+I am going to use the required technologies in the following ways.
+
+- **HTML** -
+
+- **CSS** - 
+
+- **React** - 
+
+- **Service** - 
+
+- **DB/Login** - 
+
+- **WebSocket** - 
