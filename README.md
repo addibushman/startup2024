@@ -1,6 +1,6 @@
 # As If Wardrobe
 ## Elevator Pitch
-Growing up, every girl dreamed of having Cher’s closet from the 1995 chick flick, Clueless. Not only her wardrobe but her closet app as well. As If Outfits brings this pretend 90’s application to life in a modern way. Staying through to the 90’s theme depicted in the film, this web service allows one to plan outfits seamlessly without sorting through a wardrobe manually, being able to plan out outfits throughout the week, with assistance in knowing what would look good together. Not only this, but As If Outfits also allows your friends to vote on different options when deciding on an outfit for a special occasion, or every day.
+Growing up, every girl dreamed of having Cher’s closet from the 1995 chick flick, Clueless. Not only her wardrobe but her closet app as well. As If Outfits brings this pretend 90’s application to life in a modern way. Staying through to the 90’s theme depicted in the film, this web service allows one to plan outfits seamlessly without sorting through a wardrobe manually, being able to plan out outfits throughout the week, with assistance in knowing what would look good together. Not only this, but As If Outfits also allows you to send your outfits to friends so you can get help deciding what outfit to wear for that special occasion.
 
 ## Design
 ![alt text](./assests/AsIfWardrobeLoginPageDrawing.jpeg)
@@ -8,17 +8,21 @@ Growing up, every girl dreamed of having Cher’s closet from the 1995 chick fli
 
 ### Key features
 
-put key features here
+- Secure login over HTTPS
+- Display of outfit choices
+- Ability to select, change and scroll through inventory
+- Capability to upload wardrobe onto website
+- Ability to save chosen outfit and send to others
 
 ### Technologies
 
-I am going to use the required technologies in the following ways.
+I am going to use the required technologies for this project in the following ways.
 
-- **HTML** -
+- **HTML** - Uses HTML structure for creating 2 HTML pages. One for a login page, and the other for choosing ones outfit.
 
-- **CSS** - 
+- **CSS** - Uses CSS to style website like a '90s throwback, inspired by the movie Clueless. It'll handle layouts, colors, and making sure everything looks good on different devices.
 
-- **React** - 
+- **React** - Provides secure login, outfit display, photo upload interface, display other users reactions, and routing components.
 
 - **Service** - 
 
