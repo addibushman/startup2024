@@ -1,8 +1,11 @@
 # As If Wardrobe
-## Elevator Pitch
+
+## Specification Deliverable 
+
+### Elevator Pitch
 Growing up, every girl dreamed of having Cher’s closet from the 1995 chick flick, 'Clueless'. Not only her wardrobe but her iconic closet app as well. 'As If Outfits' brings this movie 90’s application to life in a modern way. Staying through to the 90’s theme depicted in the film, this web service allows one to plan outfits seamlessly without sorting through a wardrobe manually, being able to plan out outfits throughout the week. Not only this, but 'As If Outfits' also allows you to send your outfits choices to friends allowing collaborating on each other's outfits.
 
-## Design
+### Design
 ![alt text](./assests/AsIfWardrobeLoginPageDrawing.jpeg)
 ![alt text](./assests/AsIfWardrobeDemoDrawing.jpeg)
 
