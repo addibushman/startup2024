@@ -25,10 +25,10 @@ I am going to use the required technologies for this project in the following wa
 - **React** - Provides secure login, outfit display, photo upload interface, display other users reactions, and routing components.
 
 - **Service** - Provides a backend with endpoints to support various functionalities:
-- secure login
-- upload wardrobe items
-- ability to send outfits
-- retrieve outfits
+    - secure login
+    - upload wardrobe items
+    - ability to send outfits
+    - retrieve outfits
 
 - **DB/Login** - stores user information and wardrobe items in database. User credentials are stored securely, only authenticated users can access and modify their wardrobe and outfits. The database also supports features like user registration, login, and tracking of shared outfits.
 
