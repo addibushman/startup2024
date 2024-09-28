@@ -40,9 +40,14 @@ I am going to use the required technologies for this project in the following wa
 ## HTML Deliverable 
 For this deliverable, I built out the structure of my application using HTML.
 
- **HTML pages** - 4 HTML pages for an about page, index page, wardrobe page, and friends page
- **Links** - links to navigate between pages
- **Text** - Each page has description text, and the About page gives context to the why behind the application
- **Images** - Clueless logo images on page
- **DB/Login** - login button with username and password, as well as buttons to scroll through outfits
- **WebSocket** - Page where you can view your friend's outfits and upload wardrobes for yourself
+ - **HTML pages** - 4 HTML pages for an about page, index page, wardrobe page, and friends page
+ 
+-  **Links** - links to navigate between pages
+  
+ - **Text** - Each page has description text, and the About page gives context to the why behind the application
+   
+ - **Images** - Clueless logo images on page
+
+ - **DB/Login** - login button with username and password, as well as buttons to scroll through outfits
+
+ - **WebSocket** - Page where you can view your friend's outfits and upload wardrobes for yourself
