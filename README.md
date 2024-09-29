@@ -36,3 +36,17 @@ I am going to use the required technologies for this project in the following wa
 - **DB/Login** - stores user information and wardrobe items in database. User credentials are stored securely, only authenticated users can access and modify their wardrobe and outfits. The database also supports features like user registration, login, and tracking of shared outfits.
 
 - **WebSocket** - Enables real-time communication between users, allowing them to see updates and interactions from others immediately.
+## HTML Deliverable 
+For this deliverable, I built out the structure of my application using HTML.
+
+ - **HTML pages** - 4 HTML pages for an about page, index page, wardrobe page, and friends page
+ 
+-  **Links** - links to navigate between pages
+  
+ - **Text** - Each page has description text, and the About page gives context to the why behind the application
+   
+ - **Images** - Clueless logo images on page
+
+ - **DB/Login** - login button with username and password, as well as buttons to scroll through outfits
+
+ - **WebSocket** - Page where you can view your friend's outfits and upload wardrobes for yourself
