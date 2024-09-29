@@ -33,7 +33,7 @@ I am going to use the required technologies for this project in the following wa
     - ability to send outfits
     - retrieve outfits
 
-- **DB/Login** - stores user information and wardrobe items in database. User credentials are stored securely, only authenticated users can access and modify their wardrobe and outfits. The database also supports features like user registration, login, and tracking of shared outfits.
+- **DB/Login** - stores user information and wardrobe items in the database. User credentials are stored securely, only authenticated users can access and modify their wardrobe and outfits. The database also supports features like user registration, login, and shared outfit tracking.
 
 - **WebSocket** - Enables real-time communication between users, allowing them to see updates and interactions from others immediately.
 ## HTML Deliverable 
