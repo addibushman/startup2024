@@ -1,0 +1,74 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #FFC0CB;
+  }
+  
+  header {
+    background-color: #FF69B4;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px #FFD700;
+  }
+  
+  nav menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  nav menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #app-description {
+    background-color: white;
+    border: 15px solid #D2B48C;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+  }
+  
+  #app-image {
+    text-align: center;
+    margin: 2rem;
+  }
+  
+  #app-image img {
+    max-width: 100%;
+    height: auto;
+    border: 15px solid #D2B48C;
+    border-radius: 10px;
+  }
+  
+  #quote {
+    background-color: white;
+    border: 15px solid #D2B48C;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+    font-style: italic;
+    color: #FF69B4;
+  }
+  
+  footer {
+    background-color: #FF69B4;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
