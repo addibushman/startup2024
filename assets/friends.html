@@ -1,53 +1,74 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="css/friends.css">
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>As If Wardrobe - Friends</title>
     <link rel="icon" href="icon.ico" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/friends.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
   </head>
-  <body>
-    <header>
-      <h1>As If Wardrobe<sup>&reg;</sup></h1>
-      <nav>
-        <menu>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="wardrobe.html">Wardrobe</a></li>
-          <li><a href="friends.html">Friends</a></li>
-          <li><a href="about.html">About</a></li>
+  <body class="bg-dark text-light">
+    <header class="container-fluid">
+      <nav class="navbar fixed-top navbar-dark">
+        <a class="navbar-brand" href="#">As If Wardrobe<sup>&reg;</sup></a>
+        <menu class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wardrobe.html">Wardrobe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="friends.html">Friends</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
         </menu>
       </nav>
-      <hr />
     </header>
 
-    <main>
+    <main class="container-fluid bg-secondary text-center">
       <h2>Friends' Outfits</h2>
-      <div id="friends-feed">
-        <!-- Placeholder for friends' outfits -->
-        <div class="friend-outfit">
-          <img src="placeholder.jpg" alt="Friend's Outfit" width="200" />
-          <p>Dionne's fabulous look!</p>
+      <div id="friends-feed" class="row">
+        <div class="col-md-6 mb-4">
+          <div class="friend-outfit card">
+            <img src="placeholder.jpg" alt="Friend's Outfit" class="card-img-top" />
+            <div class="card-body">
+              <p class="card-text">Dionne's fabulous look!</p>
+            </div>
+          </div>
         </div>
-        <div class="friend-outfit">
-          <img src="placeholder.jpg" alt="Friend's Outfit" width="200" />
-          <p>Tai's cool ensemble!</p>
+        <div class="col-md-6 mb-4">
+          <div class="friend-outfit card">
+            <img src="placeholder.jpg" alt="Friend's Outfit" class="card-img-top" />
+            <div class="card-body">
+              <p class="card-text">Tai's cool ensemble!</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div id="outfit-reactions">
+      <div id="outfit-reactions" class="mt-4">
         <h3>Recent Activity</h3>
-        <ul>
-          <li>Dionne liked your outfit</li>
-          <li>Tai commented on your look</li>
+        <ul class="list-group">
+          <li class="list-group-item">Dionne liked your outfit</li>
+          <li class="list-group-item">Tai commented on your look</li>
         </ul>
       </div>
     </main>
 
-    <footer>
-      <hr />
-      <span class="text-reset">Addisyn Bushman</span>
-      <br />
-      <a href="https://github.com/addibushman/startup2024">GitHub</a>
+    <footer class="bg-dark text-white-50">
+      <div class="container-fluid">
+        <span class="text-reset">Addisyn Bushman</span>
+        <a class="text-reset" href="https://github.com/addibushman/startup2024">GitHub</a>
+      </div>
     </footer>
   </body>
 </html>
