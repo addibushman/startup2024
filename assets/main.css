@@ -1,9 +1,19 @@
-body {
-  display: flex;
-  flex-direction: column;
-  min-width: 375px;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
+body {
+  font-family: 'Comic Sans MS', cursive !important;
+  background-color: hotpink !important;
+  color: #000 !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Layout */
 header {
   flex: 0 80px;
 }
@@ -18,13 +28,24 @@ main {
 
 footer {
   flex: 0 30px;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: white !important;
+  padding: 10px 0;
 }
 
-menu {
-  flex: 1;
-  display: flex;
+/* Navigation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+.navbar-nav {
   flex-direction: row !important;
-  list-style: none;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .navbar-brand {
@@ -32,14 +53,40 @@ menu {
   border-bottom: solid rgb(182, 182, 182) thin;
 }
 
-menu .nav-item {
+.nav-item {
   padding: 0 0.3em;
 }
 
-footer a {
-  float: right;
+/* Form styles */
+.form-control, .input-group-text {
+  border: 2px solid purple !important;
+  background-color: yellow !important;
+  color: black !important;
 }
 
+.btn-primary {
+  background-color: lime !important;
+  border-color: green !important;
+  color: black !important;
+}
+
+.btn-secondary {
+  background-color: orange !important;
+  border-color: darkorange !important;
+  color: black !important;
+}
+
+/* Footer styles */
+footer a {
+  color: yellow !important;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
 @media (max-height: 600px) {
   header {
     display: none;
@@ -51,3 +98,24 @@ footer a {
     flex: 1 100vh;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column !important;
+    align-items: center;
+  }
+}
+
+/* Optional: Add some '90s flair */
+h1 {
+  text-shadow: 2px 2px 0 yellow, 4px 4px 0 blue;
+  color: lime !important;
+}
+
+/* If you still want to use the leopard print background, uncomment and adjust the following:
+body {
+  background-image: url("../leopardPrint.jpg"), linear-gradient(to right, hotpink, hotpink);
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+}
+*/
