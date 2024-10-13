@@ -50,3 +50,18 @@ For this deliverable, I built out the structure of my application using HTML.
  - **DB/Login** - login button with username and password, as well as buttons to scroll through outfits
 
  - **WebSocket** - Page where you can view your friend's outfits and upload wardrobes for yourself
+
+ ## CSS Deliverable 
+For this deliverable, I built out the structure of my application using CSS.
+
+ - **Header, Footer, and main content body** 
+ 
+-  **Navigation Elements** - changed the color of anchor elements
+  
+ - **Responsive to window resizing** - Page looks great on all window sizes and devices
+   
+ - **Application elements** - good contrast between text and background
+
+ - **Application text content** - consitent fonts and colors throughout website
+
+ - **Application images** - All images are relevant and load properly
