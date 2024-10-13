@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About As If Wardrobe</title>
     <link rel="icon" href="icon.ico" />
-
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/about.css" />
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,61 +15,72 @@
     />
   </head>
   <body class="bg-dark text-light">
-    <header class="container-fluid">
-      <nav class="navbar fixed-top navbar-dark">
-        <a class="navbar-brand" href="#">As If Wardrobe<sup>&reg;</sup></a>
-        <menu class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="wardrobe.html">Wardrobe</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="friends.html">Friends</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="about.html">About</a>
-          </li>
-        </menu>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">As If Wardrobe<sup>&reg;</sup></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wardrobe.html">Wardrobe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="friends.html">Friends</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main class="container-fluid bg-secondary text-center">
-      <h2>About As If Wardrobe</h2>
-      <div id="app-description">
-        <p>
-          As If Wardrobe brings the iconic closet app from the 1995 movie 'Clueless' to life in a modern way. 
-          Stay true to the '90s theme while planning your outfits seamlessly without sorting through your wardrobe manually.
-        </p>
-        <p>
-          Plan your outfits for the week, collaborate with friends, and channel your inner Cher!
-        </p>
-      </div>
-      <div id="app-image">
-        <img src="placeholder.jpg" alt="As If Wardrobe App" class="img-fluid" />
-      </div>
-      <p>
-        "As If Wardrobe" is a wardrobe app, allowing one to scroll through different outfit options without
-        shuffling through your clothes. You simply upload pictures of your wardrobe, and create your outfit.
-        We also allow you to send your outfit ideas to your friends to help you pick the right one.
-      </p>
-      <p>
-        "As If Wardrobe" comes from the iconic 90's movie, Clueless, where every girl dreamed they could have a closet 
-        and wardrobe app like Cher. Staying true to the 90's theme, "As If Wardrobe" will feature leopard print, big play and pause buttons,
-        and be totally gorg!
-      </p>
-      <div id="quote" class="mt-4">
-        <div>"Ugh, as if!"</div>
-        <div>- Cher Horowitz</div>
-      </div>
-    </main>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2 class="mt-4">About As If Wardrobe</h2>
+          <div id="app-description">
+            <p>
+              As If Wardrobe brings the iconic closet app from the 1995 movie 'Clueless' to life in a modern way. 
+              Stay true to the '90s theme while planning your outfits seamlessly without sorting through your wardrobe manually.
+            </p>
+            <p>
+              Plan your outfits for the week, collaborate with friends, and channel your inner Cher!
+            </p>
+          </div>
+          <div id="app-image" class="my-4">
+            <img src="placeholder.jpg" alt="As If Wardrobe App" class="img-fluid" />
+          </div>
+          <p>
+            "As If Wardrobe" is a wardrobe app, allowing one to scroll through different outfit options without
+            shuffling through your clothes. You simply upload pictures of your wardrobe, and create your outfit.
+            We also allow you to send your outfit ideas to your friends to help you pick the right one.
+          </p>
+          <p>
+            "As If Wardrobe" comes from the iconic 90's movie, Clueless, where every girl dreamed they could have a closet 
+            and wardrobe app like Cher. Staying true to the 90's theme, "As If Wardrobe" will feature leopard print, big play and pause buttons,
+            and be totally gorg!
+          </p>
+          <div id="quote" class="mt-4 quote-box">
+            <div class="quote">"Ugh, as if!"</div>
+            <div class="author">Cher Horowitz</div>
+          </div>
+        </main>
 
-    <footer class="bg-dark text-white-50">
-      <div class="container-fluid">
-        <span class="text-reset">Addisyn Bushman</span>
-        <a class="text-reset" href="https://github.com/addibushman/startup2024">GitHub</a>
-      </div>
-    </footer>
-  </body>
-</html>
+        <footer class="bg-dark text-white-50">
+          <div class="container-fluid">
+            <span class="text-reset">Addisyn Bushman</span>
+            <a class="text-reset" href="https://github.com/addibushman/startup2024">GitHub</a>
+          </div>
+        </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+      </body>
+    </html>

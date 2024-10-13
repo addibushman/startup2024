@@ -1,8 +1,7 @@
 body {
-  font-family: 'Comic Sans MS', cursive;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-width: 375px;
 }
 
 header {
@@ -26,14 +25,6 @@ menu {
   display: flex;
   flex-direction: row !important;
   list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-nav {
-  flex-direction: row !important;
-  width: 100%;
-  justify-content: flex-end;
 }
 
 .navbar-brand {
@@ -51,24 +42,12 @@ footer a {
 
 @media (max-height: 600px) {
   header {
-      display: none;
+    display: none;
   }
   footer {
-      display: none;
+    display: none;
   }
   main {
-      flex: 1 100vh;
-  }
-}
-
-@media (max-width: 768px) {
-  menu {
-      flex-direction: column !important;
-      align-items: center;
-  }
-  
-  .navbar-nav {
-      flex-direction: column !important;
-      align-items: center;
+    flex: 1 100vh;
   }
 }
