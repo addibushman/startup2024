@@ -6,14 +6,37 @@
     <title>As If Wardrobe</title>
     <link rel="icon" href="icon.ico" />
     <link rel="stylesheet" href="css/main.css" />
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <style>
+      body {
+        background-color: hotpink !important;
+      }
+      .leopard-bg {
+        background-image: url('leapardPrint.png');
+        background-size: cover;
+        background-position: center;
+        padding: 120px 0 20px;
+        min-height: 100vh;
+      }
+      .content-section {
+        background-color: rgba(255, 105, 180, 0.7);
+        padding: 40px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .navbar {
+        background-color: transparent !important;
+      }
+    </style>
   </head>
+  
+  <body class="bg-dark text-light">
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
@@ -41,28 +64,28 @@
       </nav>
     </header>
 
-    <body class="bg-dark text-light">
-      <body style="background-color: hotpink !important;">
-    <main class="container-fluid bg-secondary text-center">
-      <div>
-        <h1>Welcome to As If Wardrobe</h1>
-        <p>Your '90s inspired digital closet</p>
-        <form method="get" action="wardrobe.html">
-          <div class="input-group mb-3">
-            <span class="input-group-text">@</span>
-            <input class="form-control" type="text" id="email" placeholder="email@email.com" />
-          </div>
-          <div class="input-group mb-3">
-            <span class="input-group-text">🔒</span>
-            <input class="form-control" type="password" id="password" placeholder="password" />
-          </div>
-          <div class="d-flex justify-content-between">
-            <button type="submit" class="btn btn-primary">Login</button>
-            <button type="submit" class="btn btn-secondary">Create Account</button>
-          </div>
-        </form>
-      </div>
-    </main>
+    <div class="leopard-bg">
+      <main class="container-fluid text-center">
+        <div class="content-section">
+          <h1>Welcome to As If Wardrobe</h1>
+          <p>Your '90s inspired digital closet</p>
+          <form method="get" action="wardrobe.html">
+            <div class="input-group mb-3">
+              <span class="input-group-text">@</span>
+              <input class="form-control" type="text" id="email" placeholder="email@email.com" />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">🔒</span>
+              <input class="form-control" type="password" id="password" placeholder="password" />
+            </div>
+            <div class="d-flex justify-content-between">
+              <button type="submit" class="btn btn-primary">Login</button>
+              <button type="submit" class="btn btn-secondary">Create Account</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
 
     <footer class="bg-dark text-white-50">
       <div class="container-fluid">
