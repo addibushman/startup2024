@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
-import Wardrobe from './components/Wardrobe';
-import Friends from './components/Friends';
-import About from './components/About';
+import Home from './Home';
+import Wardrobe from './Wardrobe';
+import Friends from './Friends';
+import About from './About';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
