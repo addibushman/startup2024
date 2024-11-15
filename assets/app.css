@@ -1,14 +1,117 @@
-body {
-    font-family: Arial, sans-serif;
+
+html, body {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    height: 100%;
+    font-family: 'Comic Sans MS', cursive !important;
+    background-color: transparent;
   }
   
-  h1 {
-    color: #333;
+  body {
+    color: #000 !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('./assets/leapardPrint.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
   }
+  
+  .navbar {
+    background-color: transparent !important; 
+    padding: 1rem;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; 
+    width: 100%; 
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .navbar-brand, .nav-link {
+    color: white !important; 
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navbar-nav .nav-item {
+    padding: 0 0.3em;
+  }
+  
+  .nav-item {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .content-section {
+    background-color: rgba(255, 105, 180, 0.7); 
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 100px auto 20px auto; 
+    z-index: 1; 
+  }
+  
+  .btn-primary {
+    background-color: orange !important;
+    border-color: darkorange !important;
+    color: black !important;
+  }
+  
+  .btn-secondary {
+    background-color: orange !important;
+    border-color: darkorange !important;
+    color: black !important;
+  }
+  
+  .input-group-text, .form-control {
+    border: 2px solid purple !important;
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  
+  footer {
+    background-color: #FF69B4;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer a {
+    color: black !important;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column !important;
+      align-items: center;
+    }
+  }
+  
+  @media (max-height: 600px) {
+    header {
+      display: none;
+    }
+    footer {
+      display: none;
+    }
+    main {
+      flex: 1 100vh;
+    }
+  }
+  

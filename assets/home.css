@@ -1,0 +1,34 @@
+
+.leopard-bg {
+  background-image: url('./assets/leapardPrint.png');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0 20px;
+  min-height: 100vh;
+}
+
+.content-section {
+  background-color: rgba(255, 105, 180, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-control, .input-group-text {
+  border: 2px solid purple !important;
+  background-color: yellow !important;
+  color: black !important;
+}
+
+.btn-primary {
+  background-color: white !important;
+  border-color: white !important;
+  color: black !important;
+}
+
+.btn-secondary {
+  background-color: orange !important;
+  border-color: darkorange !important;
+  color: black !important;
+}

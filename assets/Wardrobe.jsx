@@ -10,7 +10,7 @@ export const Wardrobe = () => {
                 <p>Welcome, <span id="username">user</span>!</p>
               </div>
               <div id="outfit-display" className="mb-4">
-                <img src="currentOutfit.png" alt="Current Outfit" className="img-fluid" />
+                <img src="./assets/currentOutfit.png" alt="Current Outfit" className="img-fluid" />
               </div>
               <div id="wardrobe-controls" className="mb-4">
                 <button id="prev-item" className="btn btn-primary control-button">Previous Item</button>

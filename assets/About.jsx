@@ -16,7 +16,7 @@ export const About = () => {
             </p>
           </div>
           <div id="app-image" className="my-4">
-            <img src="placeholder.png" alt="As If Wardrobe App" className="img-fluid" />
+            <img src="./assets/placeholder.png" alt="As If Wardrobe App" className="img-fluid" />
           </div>
           <p>
             "As If Wardrobe" is a wardrobe app, allowing one to scroll through different outfit options without

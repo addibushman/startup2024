@@ -1,25 +1,24 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom'; // Import Router and necessary components
-import { Home } from './home'; // Import pages from assets
+import { Home } from './home'; 
 import { Wardrobe } from './wardrobe';
 import { Friends } from './friends';
 import { About } from './about';
-import 'bootstrap/dist/css/bootstrap.min.css'; // For Bootstrap styling
-import './app.css'; // Custom app styles
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './app.css'; 
 
 
 function app() {
   return (
     <Router>
-      <div className="body bg-dark text-light">
-        {/* Header with Navigation */}
+    
+        
         <header className="container-fluid">
-          <nav className="navbar fixed-top navbar-dark">
             <div className="navbar-brand">
               As If Wardrobe<sup>&reg;</sup>
             </div>
             <menu className="navbar-nav">
-              {/* Navigation Links */}
+            
               <li className="nav-item">
                 <NavLink className="nav-link" to="/" activeClassName="active">
                   Home
@@ -41,13 +40,12 @@ function app() {
                 </NavLink>
               </li>
             </menu>
-          </nav>
         </header>
 
-        {/* Main Content Area */}
+    
         <main>
           <Routes>
-            {/* Define Routes for each page */}
+
             <Route path="/" element={<Home />} />
             <Route path="/wardrobe" element={<Wardrobe />} />
             <Route path="/friends" element={<Friends />} />
@@ -55,16 +53,11 @@ function app() {
           </Routes>
         </main>
 
-        {/* Footer */}
-        <footer className="bg-dark text-muted">
-          <div className="container-fluid">
-            <span className="text-reset">Author Name(s)</span>
-            <a className="text-reset" href="https://github.com/your-repo">
-              Source
-            </a>
-          </div>
+        <footer>
+          <a href="https://github.com/addibushman/startup2024" target="_blank" rel="noopener noreferrer">
+            link to Addisyn's GitHub
+          </a>
         </footer>
-      </div>
     </Router>
   );
 }

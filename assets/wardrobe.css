@@ -80,13 +80,3 @@ nav menu li a {
 #finish-button {
   right: 1rem;
 }
-
-footer {
-  background-color: #FF69B4;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
