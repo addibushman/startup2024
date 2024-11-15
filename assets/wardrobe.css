@@ -1,92 +1,92 @@
 body {
-    font-family: 'Comic Sans MS', cursive;
-    margin: 0;
-    padding: 0;
-    background-color: #FFC0CB;
-  }
-  
-  header {
-    background-color: #FF69B4;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  h1 {
-    color: white;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px #FFD700;
-  }
-  
-  nav menu {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  nav menu li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .wardrobe-container {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-  }
-  
-  #outfit-display {
-    background-color: white;
-    border: 15px solid #D2B48C;
-    border-radius: 10px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    position: relative;
-  }
-  
-  #outfit-display img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  #wardrobe-controls {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .control-button {
-    background-color: #FF69B4;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  #browse-button, #finish-button {
-    position: absolute;
-    bottom: 1rem;
-    background-color: #FFD700;
-  }
-  
-  #browse-button {
-    left: 1rem;
-  }
-  
-  #finish-button {
-    right: 1rem;
-  }
-  
-  footer {
-    background-color: #FF69B4;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+  font-family: 'Comic Sans MS', cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #FFC0CB;
+}
+
+header {
+  background-color: #FF69B4;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px #FFD700;
+}
+
+nav menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.wardrobe-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+#outfit-display {
+  background-color: white;
+  border: 15px solid #D2B48C;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+#outfit-display img {
+  max-width: 100%;
+  height: auto;
+}
+
+#wardrobe-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.control-button {
+  background-color: #FF69B4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#browse-button, #finish-button {
+  position: absolute;
+  bottom: 1rem;
+  background-color: #FFD700;
+}
+
+#browse-button {
+  left: 1rem;
+}
+
+#finish-button {
+  right: 1rem;
+}
+
+footer {
+  background-color: #FF69B4;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
