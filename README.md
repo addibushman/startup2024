@@ -83,7 +83,7 @@ For this deliverable, I built out the structure of my application using CSS.
  - **Application images** - All images are relevant and load properly
 
 
- # REACT Deliverable 
+ ## REACT Deliverable 
 For this deliverable, I built out the structure of my application using React.
 
  - **Header, Footer, and main content body** Implemented fixed navbar and footer across pages.
