@@ -65,3 +65,36 @@ For this deliverable, I built out the structure of my application using CSS.
  - **Application text content** - consitent fonts and colors throughout website
 
  - **Application images** - All images are relevant and load properly
+
+
+## CSS Deliverable 
+For this deliverable, I built out the structure of my application using CSS.
+
+ - **Header, Footer, and main content body** 
+ 
+-  **Navigation Elements** - changed the color of anchor elements
+  
+ - **Responsive to window resizing** - Page looks great on all window sizes and devices
+   
+ - **Application elements** - good contrast between text and background
+
+ - **Application text content** - consitent fonts and colors throughout website
+
+ - **Application images** - All images are relevant and load properly
+
+
+ # REACT Deliverable 
+For this deliverable, I built out the structure of my application using React.
+
+ - **Header, Footer, and main content body** Implemented fixed navbar and footer across pages.
+ 
+-  **Navigation Elements** - Used React Router for seamless page navigation.
+  
+ - **Responsive to window resizing** - Ensured layout adapts to different screen sizes.
+   
+ - **Application elements** - Styled form inputs, buttons, and navigation for consistency.
+
+
+ - **Application text content** - Consistent headings and descriptive text across pages.
+
+ - **Application images** - Loaded and displayed background and profile images.

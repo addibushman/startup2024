@@ -1,4 +1,6 @@
 import React from 'react';
+import winterOutfit2 from '../public/winterOutfit2.png';
+import winterOutfit from '../public/winterOutfit.png';
 
 export const Friends = () => {
     return (
@@ -10,7 +12,7 @@ export const Friends = () => {
               <div id="friends-feed" className="row">
                 <div className="col-md-6 mb-4">
                   <div className="friend-outfit card">
-                    <img src="./assets/winterOutfit.png" alt="Friend's Outfit" className="card-img-top" />
+                  <img src={winterOutfit} alt="winterOutfit" />;
                     <div className="card-body">
                       <p className="card-text">Dionne's fabulous look!</p>
                     </div>
@@ -18,7 +20,7 @@ export const Friends = () => {
                 </div>
                 <div className="col-md-6 mb-4">
                   <div className="friend-outfit card">
-                    <img src="./assets/winterOutfit2.png" alt="Friend's Outfit" className="card-img-top" />
+                  <img src={winterOutfit2} alt="winterOutfit2" />;
                     <div className="card-body">
                       <p className="card-text">Tai's cool ensemble!</p>
                     </div>

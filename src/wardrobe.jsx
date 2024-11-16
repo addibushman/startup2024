@@ -1,4 +1,5 @@
 import React from 'react';
+import CurrentOutfit from '../public/currentOutfit.png';
 
 export const Wardrobe = () => {
     return (
@@ -10,7 +11,7 @@ export const Wardrobe = () => {
                 <p>Welcome, <span id="username">user</span>!</p>
               </div>
               <div id="outfit-display" className="mb-4">
-                <img src="./assets/currentOutfit.png" alt="Current Outfit" className="img-fluid" />
+              <img src={CurrentOutfit} alt="Current Outfit" />;
               </div>
               <div id="wardrobe-controls" className="mb-4">
                 <button id="prev-item" className="btn btn-primary control-button">Previous Item</button>

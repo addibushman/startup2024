@@ -15,9 +15,6 @@ export const About = () => {
               Plan your outfits for the week, collaborate with friends, and channel your inner Cher!
             </p>
           </div>
-          <div id="app-image" className="my-4">
-            <img src="./assets/placeholder.png" alt="As If Wardrobe App" className="img-fluid" />
-          </div>
           <p>
             "As If Wardrobe" is a wardrobe app, allowing one to scroll through different outfit options without
             shuffling through your clothes. You simply upload pictures of your wardrobe, and create your outfit.

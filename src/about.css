@@ -1,6 +1,6 @@
-/* About Page Specific Styles */
+
 .leopard-bg {
-  background-image: url('./assets/leapardPrint.png');
+  background-image: url('../public/leapardPrint.png');
   background-size: cover;
   background-position: center;
   padding: 120px 0 20px;
@@ -35,6 +35,6 @@
 }
 
 #picture img {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
 }

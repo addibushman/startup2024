@@ -1,6 +1,6 @@
 
 .leopard-bg {
-  background-image: url('./assets/leapardPrint.png');
+  background-image: url('../public/leapardPrint.png');
   background-size: cover;
   background-position: center;
   padding: 120px 0 20px;
