@@ -1,8 +1,19 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import winterOutfit from '../public/winterOutfit.png';
+import winterOutfit2 from '../public/winterOutfit2.png';
+import placeholderOutfit from '../public/placeholderOutfit.png'; // Add the third image to the public folder
+
 export const Wardrobe = () => {
-  const [outfit, setOutfit] = useState(winterOutfit);
+  const [outfitIndex, setOutfitIndex] = useState(0);
+  const outfits = [
+    'wardrobeOutfit.png', 
+    'wardrobeOutfit2.png', 
+    'wardrobeOutfit3.png',
+    'wardrobeOutfit4.png',
+    'wardrobeOutfit5.png',
+    'wardrobeOutfit6.png'
+  ]; // Array of outfits
   const [friendsList, setFriendsList] = useState([
     { id: 1, name: 'Dionne' },
     { id: 2, name: 'Tai' },
@@ -22,6 +33,14 @@ export const Wardrobe = () => {
     }
   };
 
+  const nextOutfit = () => {
+    setOutfitIndex((prevIndex) => (prevIndex + 1) % outfits.length);
+  };
+
+  const prevOutfit = () => {
+    setOutfitIndex((prevIndex) => (prevIndex - 1 + outfits.length) % outfits.length);
+  };
+
   return (
     <div className="leopard-bg">
       <main className="container-fluid text-center">
@@ -34,25 +53,24 @@ export const Wardrobe = () => {
 
           <div id="outfit-display" className="mb-4">
             <img
-              src={outfit}
+              src={outfits[outfitIndex]}
               alt="Current Outfit"
               className="img-fluid"
             />
           </div>
 
           <div id="wardrobe-controls" className="mb-4">
-            <button id="prev-item" className="btn btn-primary control-button">
+            <button onClick={prevOutfit} className="btn btn-primary control-button">
               Previous Item
             </button>
-            <button id="next-item" className="btn btn-primary control-button">
+            <button onClick={nextOutfit} className="btn btn-primary control-button">
               Next Item
             </button>
-            <button id="save-outfit" className="btn btn-success control-button">
+            <button className="btn btn-success control-button">
               Save Outfit
             </button>
             {/* Share Outfit Button */}
             <button
-              id="share-outfit"
               className="btn btn-info control-button"
               onClick={() => setIsModalOpen(true)}
             >
