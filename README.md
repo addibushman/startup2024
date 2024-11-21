@@ -98,3 +98,19 @@ For this deliverable, I built out the structure of my application using React.
  - **Application text content** - Consistent headings and descriptive text across pages.
 
  - **Application images** - Loaded and displayed background and profile images.
+
+
+ ## Service Deliverable 
+For this deliverable, I built out the structure of my application using vite and javascript.
+
+ - **Login** Endpoint to authenticate users.
+ 
+-  **Upload wardrobe items** - Allows users to add items to their wardrobe.
+  
+ - **Send outfits** - Allows users to share outfits with friends.
+   
+ - **Retrieve outfits** - Fetches shared outfits for the user.
+
+ - **Next and previous outfits** - Navigation through the wardrobe outfits.
+
+ - **Save an outfit** - Allows users to save an outfit for later use.
