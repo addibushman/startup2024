@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
 export const Wardrobe = () => {
-  // Initialize the wardrobe with multiple outfit images (you can add more images)
   const [wardrobeItems, setWardrobeItems] = useState([
     'currentOutfit.png',
     'wardrobeOutfit2.png',
@@ -12,27 +11,22 @@ export const Wardrobe = () => {
   ]);
   const [currentOutfitIndex, setCurrentOutfitIndex] = useState(0); // Index to track the current outfit being shown
 
-  // Handle previous item navigation
   const handlePrevItem = () => {
     setCurrentOutfitIndex(
       (prevIndex) => (prevIndex - 1 + wardrobeItems.length) % wardrobeItems.length
     );
   };
 
-  // Handle next item navigation
   const handleNextItem = () => {
     setCurrentOutfitIndex(
       (prevIndex) => (prevIndex + 1) % wardrobeItems.length
     );
   };
 
-  // Handle save outfit functionality (implement your saving logic)
   const handleSaveOutfit = () => {
     alert('Outfit saved!');
-    // Add logic to save the outfit, maybe to a backend or local storage
   };
 
-  // Handle file upload functionality (upload new outfit)
   const handleFileUpload = async (e) => {
     const file = e.target.files[0];
     if (file) {
@@ -50,7 +44,6 @@ export const Wardrobe = () => {
             <p>Welcome, <span id="username">user</span>!</p>
           </div>
           <div id="outfit-display" className="mb-4">
-            {/* Display the current outfit */}
             <img src={wardrobeItems[currentOutfitIndex]} alt="Current Outfit" />
           </div>
           <div id="wardrobe-controls" className="mb-4">

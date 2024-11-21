@@ -24,24 +24,64 @@ app.post('/api/register', (req, res) => {
   res.json({ message: 'Account created successfully!' });
 });
 
-// Endpoint to get wardrobe items
 app.get('/api/wardrobe', (req, res) => {
     res.json({ items: wardrobeItems });
   });
   
-  // Endpoint to add an item to the wardrobe
   app.post('/api/wardrobe', (req, res) => {
-    const { item } = req.body; // Assume item is a URL to the uploaded image
+    const { item } = req.body;
     wardrobeItems.push(item);
     res.json({ message: 'Item added to wardrobe!', item });
   });
   
-  // Endpoint to save an outfit (just an example, can be expanded)
   app.post('/api/save-outfit', (req, res) => {
-    const { outfit } = req.body; // Saving the selected outfit
+    const { outfit } = req.body; 
     console.log('Outfit saved:', outfit);
     res.json({ message: 'Outfit saved successfully!' });
   });
+
+  let sharedOutfits = [
+    { 
+      id: 1, 
+      outfit: '/outfits/outfit1.jpg', 
+      friend: 'Dionne', 
+      likes: 0
+    },
+    { 
+      id: 2, 
+      outfit: '/outfits/outfit2.jpg', 
+      friend: 'Tai', 
+      likes: 0
+    },
+  ];
+  
+  app.post('/api/share-outfit', (req, res) => {
+    const { outfit, friend } = req.body;
+    const newOutfit = {
+      id: sharedOutfits.length + 1,
+      outfit,
+      friend,
+      likes: 0,
+    };
+    sharedOutfits.push(newOutfit);
+    res.json({ message: 'Outfit shared successfully!', outfit: newOutfit });
+  });
+  
+  app.get('/api/shared-outfits', (req, res) => {
+    res.json({ outfits: sharedOutfits });
+  });
+  
+  app.post('/api/like-outfit', (req, res) => {
+    const { id } = req.body;
+    const outfit = sharedOutfits.find((outfit) => outfit.id === id);
+    if (outfit) {
+      outfit.likes += 1;
+      res.json({ message: 'Outfit liked!', likes: outfit.likes });
+    } else {
+      res.status(404).json({ message: 'Outfit not found!' });
+    }
+  });
+  
 
 const port = process.argv.length > 2 ? process.argv[2] : 4000;
 app.listen(port, () => {
