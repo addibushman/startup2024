@@ -1,8 +1,18 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 
 export const Home = () => {
   const navigate = useNavigate();
+  const [message, setMessage] = useState('');
+
+  // Fetch data from the backend
+  useEffect(() => {
+    fetch('/api/hello')
+      .then((response) => response.json())
+      .then((data) => {
+        setMessage(data.message);  // Set message from the API response
+      });
+  }, []);
 
   const handleLogin = (e) => {
     e.preventDefault();
