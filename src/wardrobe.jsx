@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import winterOutfit from '../public/winterOutfit.png';
-import winterOutfit2 from '../public/winterOutfit2.png';
 
 export const Wardrobe = () => {
   const [outfitIndex, setOutfitIndex] = useState(0);
