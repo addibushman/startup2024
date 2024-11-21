@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import winterOutfit from '../public/winterOutfit.png';
 import winterOutfit2 from '../public/winterOutfit2.png';
-import placeholderOutfit from '../public/placeholderOutfit.png'; // Add the third image to the public folder
+
 
 export const Wardrobe = () => {
   const [outfitIndex, setOutfitIndex] = useState(0);
@@ -13,7 +13,7 @@ export const Wardrobe = () => {
     'wardrobeOutfit4.png',
     'wardrobeOutfit5.png',
     'wardrobeOutfit6.png'
-  ]; // Array of outfits
+  ];
   const [friendsList, setFriendsList] = useState([
     { id: 1, name: 'Dionne' },
     { id: 2, name: 'Tai' },
@@ -69,7 +69,6 @@ export const Wardrobe = () => {
             <button className="btn btn-success control-button">
               Save Outfit
             </button>
-            {/* Share Outfit Button */}
             <button
               className="btn btn-info control-button"
               onClick={() => setIsModalOpen(true)}
