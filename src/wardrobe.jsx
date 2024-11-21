@@ -3,17 +3,18 @@ import { useNavigate } from 'react-router-dom';
 import winterOutfit from '../public/winterOutfit.png';
 import winterOutfit2 from '../public/winterOutfit2.png';
 
-
 export const Wardrobe = () => {
   const [outfitIndex, setOutfitIndex] = useState(0);
   const outfits = [
-    'wardrobeOutfit.png', 
-    'wardrobeOutfit2.png', 
-    'wardrobeOutfit3.png',
-    'wardrobeOutfit4.png',
-    'wardrobeOutfit5.png',
-    'wardrobeOutfit6.png'
+    '/currentOutfit.png',
+    '/wardrobeOutfit2.png',
+    '/wardrobeOutfit3.png',
+    '/wardrobeOutfit4.png',
+    '/wardrobeOutfit5.png',
+    '/wardrobeOutfit6.png',
+
   ];
+
   const [friendsList, setFriendsList] = useState([
     { id: 1, name: 'Dionne' },
     { id: 2, name: 'Tai' },
@@ -21,8 +22,31 @@ export const Wardrobe = () => {
   ]);
   const [selectedFriend, setSelectedFriend] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [saveMessage, setSaveMessage] = useState('');
 
   const navigate = useNavigate();
+
+  const handleSaveOutfit = () => {
+    const outfit = outfits[outfitIndex];
+     
+
+    fetch('/api/save-outfit', {
+      method: 'POST',
+      body: JSON.stringify({ outfit }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setSaveMessage('Outfit saved successfully!');
+        setTimeout(() => setSaveMessage(''), 3000);
+      })
+      .catch((error) => {
+        console.error('Error saving outfit:', error);
+        alert('Something went wrong!');
+      });
+  };
 
   const handleShareOutfit = () => {
     if (selectedFriend) {
@@ -53,7 +77,7 @@ export const Wardrobe = () => {
 
           <div id="outfit-display" className="mb-4">
             <img
-              src={outfits[outfitIndex]}
+              src={`${outfits[outfitIndex]}`}
               alt="Current Outfit"
               className="img-fluid"
             />
@@ -66,7 +90,7 @@ export const Wardrobe = () => {
             <button onClick={nextOutfit} className="btn btn-primary control-button">
               Next Item
             </button>
-            <button className="btn btn-success control-button">
+            <button onClick={handleSaveOutfit} className="btn btn-success control-button">
               Save Outfit
             </button>
             <button
@@ -76,6 +100,8 @@ export const Wardrobe = () => {
               Share Outfit
             </button>
           </div>
+
+          {saveMessage && <div className="alert alert-success">{saveMessage}</div>}
 
           {isModalOpen && (
             <div className="modal" style={{ display: 'block' }}>
