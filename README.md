@@ -114,3 +114,13 @@ For this deliverable, I built out the structure of my application using vite and
  - **Next and previous outfits** - Navigation through the wardrobe outfits.
 
  - **Save an outfit** - Allows users to save an outfit for later use.
+
+
+ ## Login Deliverable 
+For this deliverable, I built out the structure of my application using vite and javascript.
+
+ - **Database** - Stores user information and wardrobe items securely in database.
+ 
+-  **User Credentials** - User Crendentials stored securly in database
+  
+ - **Supported Features** - The database supports registration, login, and shared outfit tracking features.
