@@ -36,6 +36,8 @@ I am going to use the required technologies for this project in the following wa
 - **DB/Login** - stores user information and wardrobe items in the database. User credentials are stored securely, only authenticated users can access and modify their wardrobe and outfits. The database also supports features like user registration, login, and shared outfit tracking.
 
 - **WebSocket** - Enables real-time communication between users, allowing them to see updates and interactions from others immediately.
+
+
 ## HTML Deliverable 
 For this deliverable, I built out the structure of my application using HTML.
 
@@ -51,20 +53,11 @@ For this deliverable, I built out the structure of my application using HTML.
 
  - **WebSocket** - Page where you can view your friend's outfits and upload wardrobes for yourself
 
- ## CSS Deliverable 
-For this deliverable, I built out the structure of my application using CSS.
+ - **Database Placeholders** - Placeholders for storing user credentials and outfit data
 
- - **Header, Footer, and main content body** 
- 
--  **Navigation Elements** - changed the color of anchor elements
-  
- - **Responsive to window resizing** - Page looks great on all window sizes and devices
-   
- - **Application elements** - good contrast between text and background
+- **3rd Party Service Calls** - Placeholders for fetching outfit data from external APIs
 
- - **Application text content** - consitent fonts and colors throughout website
-
- - **Application images** - All images are relevant and load properly
+-**WebSocket** - Placeholder for real-time communication with friends' outfits and wardrobe uploads
 
 
 ## CSS Deliverable 
